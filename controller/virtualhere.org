@@ -5,7 +5,7 @@ https://www.virtualhere.com
 스팀덱에 server를, 컨트롤러를 사용하고자 하는 PC에 client를 설치하면 된다.
 
 * 사용
-다운로드 받은 ​~vhusbdx86_64~​ 를 실행하면 된다.
+다운로드 받은 ~vhusbdx86_64~ 를 실행하면 된다.
 
 #+begin_src shell
 #!/bin/sh
@@ -15,7 +15,7 @@ systemd-inhibit sudo /home/deck/vhusbdx86_64
 * 고급 설정
 
 ** 시스템 잠자기 방지
-​~systemd-inhibit~​ 으로 프로그램을 실행하면 OS가 전원 관리로 sleep되는 것을 막을 수 있다.
+~systemd-inhibit~ 으로 프로그램을 실행하면 OS가 전원 관리로 sleep되는 것을 막을 수 있다.
 
 ** 외부망에서 연결하기
 같은 네트워크일 경우 virtualhere는 네트워크 내부의 virtualhere 서버를 자동으로 검색하여 보여준다.
@@ -23,7 +23,7 @@ systemd-inhibit sudo /home/deck/vhusbdx86_64
 하지만 같은 네트워크가 아니거나 다른 식의 매핑이 필요한 경우 virtualhere의 server, client의 역할을 반대로 바꿀 수 있다.
 
 1. 방화벽/공유기 등에 TCP 7575 포트(기본값)을 허용한다.
-2. ​~vhusbdx86_64~​와 같은 디렉토리에 있는 ​~config.ini~​파일을 수정한다.(없을 경우 만든다)
+2. ~vhusbdx86_64~ 와 같은 디렉토리에 있는 ~config.ini~ 파일을 수정한다.(없을 경우 만든다)
     #+begin_src conf
     It=**********
     EasyFindId=**********************
@@ -38,5 +38,5 @@ Virtualhere로 컨트롤러 입력 전체가 PC로 연결되면 steamdeck에서 
 
 https://github.com/msxmine/SI2DSU
 
-리드미를 읽고 따라하되 4번 ​=Copy the file "game_actions_480.vdf" from SI2DSU release to the "controller_config" folder.=​은 빼고 진행한다.
+리드미를 읽고 따라하되 4번 =Copy the file "game_actions_480.vdf" from SI2DSU release to the "controller_config" folder.= ​은 빼고 진행한다.
 마지막 릴리즈가 2년 전이라 컨트롤러 매핑이 호환되지 않는 듯 하다.
